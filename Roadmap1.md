@@ -1,4 +1,4 @@
-# Angular & Vue.js – 60-Day Learning Roadmap 1
+# Angular & Vue.js – 60-Day Learning Roadmap
 
 ## Phase 1: Angular Fundamentals (Days 1–15)
 
