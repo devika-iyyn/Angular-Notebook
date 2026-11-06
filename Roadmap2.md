@@ -1,706 +1,422 @@
-# Angular Basics
+# Angular & Vue.js – 60-Day Production-Ready Learning Roadmap
 
-> **Version:** Angular v22  
-> **Official Website:** Angular.dev
+## Objective
 
----
+The objective of this roadmap is to develop practical knowledge of Angular and Vue.js for contributing to real-world and production-ready frontend applications.
 
-# What is Angular?
-
-Angular is a **front-end framework** used to build **client-side web applications**.
-
-It is mainly used for building **Single Page Applications (SPAs)**.
-
-Angular is developed and maintained by **Google**.
-
-Angular mainly uses **TypeScript**, which was developed by **Microsoft**.
-
-## Single Page Application (SPA)
-
-In a traditional website, when we click a link, the browser may load a completely new page.
-
-In an Angular SPA, Angular can update the required part of the view **without reloading the entire page**.
-
-```text
-Traditional Website:
-Click → Full page reload
-
-Single Page Application:
-Click → Required view/content updates
-```
-
-## Why do we use Angular?
-
-- Structured / Modular Approach
-- Reusable Code
-- Unit Testable and Maintainable
-
-
-# Angular History
-
-## 2010 — AngularJS
-
-AngularJS was introduced in **2010**.
-
-It became very popular, and many organizations used AngularJS to build enterprise applications.
-
-AngularJS is also known as:
-
-```text
-Angular 1.x
-AngularJS
-```
-
-> AngularJS and modern Angular are different architectures.
+The roadmap covers framework fundamentals, advanced concepts, application architecture, API integration, state management, security, performance, testing, debugging, build processes and client-side deployment.
 
 ---
 
-## 2016 — Angular 2
+# Phase 1: Angular Fundamentals and Application Architecture (Days 1–15)
 
-In **2016**, Angular 2 was released.
+## Technical Concepts
 
-This was a major redesign compared to AngularJS.
+1. Introduction to Angular and its architecture - **completed**
+2. Angular CLI and project setup - **completed**
+3. Angular project structure and configuration - **completed**
+4. Standalone components and component architecture - **completed**
+5. Templates and data binding - **completed**
+6. Property binding, event binding and two-way binding - **completed**
+7. Parent-child component communication
+8. Input and Output properties
+9. Built-in control flow (`@if`, `@for`, `@switch`)
+10. Directives and pipes
+11. TypeScript fundamentals in Angular
+12. Component lifecycle hooks
+13. Content projection and reusable component design
+14. Shared and reusable UI components
+15. Application folder structure and feature-based architecture
+16. Environment configuration fundamentals
+17. Responsive UI development
 
-Modern Angular started with Angular 2.
+## Practical and Real-World Exposure
 
----
-
-## Angular Version 3 Was Skipped
-
-Angular version 3 was skipped.
-
-This was mainly done to avoid confusion because Angular packages had different version numbers, including the Router package version.
-
-The Angular team moved directly from:
-
-```text
-Angular 2 → Angular 4
-```
-
----
-
-## Other Angular Versions
-
-Angular continued releasing new major versions regularly:
-
-```text
-Angular 4 → 2017
-Angular 5 → 2017
-Angular 6 → 2018
-Angular 7 → 2018
-Angular 8 → 2019
-Angular 9 → 2020
-Angular 10 → 2020
-Angular 11 → 2020
-Angular 12 → 2021
-Angular 13 → 2021
-Angular 14 → 2022
-Angular 15 → 2022
-Angular 16 → 2023
-Angular 17 → 2023
-Angular 18 → 2024
-Angular 19 → 2024
-Angular 20 → 2025
-Angular 21 → 2025
-Angular 22 → 2026
-```
-
-> **Current learning version: Angular v22**
+- Understand an existing Angular project structure.
+- Identify application entry points and configuration files.
+- Understand component hierarchy and application data flow.
+- Create reusable UI components.
+- Follow existing coding standards and naming conventions.
+- Understand feature-based folder organization.
+- Work with responsive layouts and reusable design patterns.
 
 ---
 
+# Phase 2: Angular Advanced Concepts and Production Development (Days 16–30)
 
-## Node.js
+## Technical Concepts
 
-Node.js is required for Angular development.
+1. Angular Router and navigation
+2. Route parameters, query parameters and nested routes
+3. Lazy loading
+4. Route guards and route protection
+5. Services and Dependency Injection
+6. HTTP Client and REST API integration
+7. HTTP headers and request configuration
+8. HTTP interceptors
+9. Observables and RxJS fundamentals
+10. Important RxJS operators
+11. Subscription management and memory leak prevention
+12. Reactive Forms and Template-driven Forms
+13. FormGroup, FormControl and FormArray
+14. Form validation and error handling
+15. Custom and asynchronous validators
+16. Angular Signals and computed values
+17. Loading, empty and error states
+18. File upload and download
+19. Search, filtering, sorting and pagination
+20. Basic component and service testing
 
-Node.js allows JavaScript to run **outside the browser**.
+## Production-Ready Concepts
 
-We can check the Node.js version using:
+### Authentication and Authorization
 
-```bash
-node -v
-```
+- Login and logout flows
+- Authentication tokens
+- Token handling fundamentals
+- Route protection
+- Role-based access control
+- Permission-based UI rendering
+- Session expiration handling
 
----
+### Error Handling
 
-## npm
+- Centralized API error handling
+- HTTP error handling
+- User-friendly error messages
+- Global error handling fundamentals
+- Retry and fallback strategies
 
-npm stands for **Node Package Manager**.
+### Performance
 
-npm is used to install and manage packages.
+- Lazy loading
+- Code splitting
+- Change detection basics
+- `OnPush` change detection
+- `@defer` fundamentals
+- Avoiding unnecessary rendering
+- Basic bundle optimization
 
-npm is installed along with Node.js.
+### Security
 
-Check the npm version:
+- XSS awareness and prevention
+- Safe handling of user input
+- Secure API communication
+- Avoiding sensitive data exposure in frontend code
+- Environment variables and configuration management
 
-```bash
-npm --version
-```
+## Build and Deployment Fundamentals
 
-or:
+1. Development vs production environments
+2. Environment configuration
+3. Production build process
+4. Angular build commands
+5. Understanding generated build files
+6. Build optimization
+7. Source maps
+8. Deployment configuration
+9. Environment-specific API URLs
+10. Client-side routing configuration after deployment
 
-```bash
-npm -v
-```
+## Angular Practical Project
 
----
+### Employee Management Application
 
-# How to Create a New Angular App
+Features:
 
-First, create or open a folder where you want to create your Angular project.
-
-Open the terminal or Command Prompt in that folder.
-
-For modern Angular, the recommended way is to use Angular CLI:
-
-```bash
-ng new my-app
-```
-
-Example:
-
-```bash
-ng new my-angular-app
-```
-
----
-
-# Running the Project
-
-Move into the project folder:
-
-```bash
-cd my-angular-app
-```
-
-Run the application:
-
-```bash
-npm start
-```
-
-or:
-
-```bash
-ng serve
-```
-
-To automatically open the application in the browser:
-
-```bash
-ng serve -o
-```
-
-The application normally runs on:
-
-```text
-http://localhost:4200
-```
-
----
-
-# Angular CLI
-
-CLI means:
-
-> **Command Line Interface**
-
-Angular CLI helps us create and manage Angular applications using commands instead of manually creating files and folders.
-
-Install Angular CLI globally:
-
-```bash
-npm install -g @angular/cli
-```
-
-After installing Angular CLI, we can use the:
-
-```text
-ng
-```
-
-command.
-
-Examples:
-
-```bash
-ng new my-app
-ng serve
-```
-
-Check the Angular CLI version:
-
-```bash
-ng version
-```
+- Authentication UI
+- Protected routes
+- Role-based UI access
+- Dashboard
+- Employee listing and details
+- Create, edit and delete employees
+- Search, filtering and pagination
+- Reactive forms and validations
+- REST API integration
+- Loading, empty and error states
+- HTTP interceptors
+- File upload
+- Reusable components
+- Basic testing
+- Production build and deployment
 
 ---
 
-# Project Structure
+# Phase 3: Vue.js Fundamentals and Application Architecture (Days 31–45)
 
-A basic modern Angular project contains:
+## Technical Concepts
 
-```text
-my-angular-app/
-│
-├── src/
-│   ├── app/
-│   ├── index.html
-│   ├── main.ts
-│   └── styles.css
-│
-├── angular.json
-├── package.json
-└── tsconfig.json
-```
+1. Introduction to Vue.js and its architecture
+2. Vue project setup using `create-vue`
+3. Vite fundamentals
+4. Vue project structure
+5. Single File Components
+6. `<script setup>`, `<template>` and `<style>`
+7. Template syntax and data binding
+8. Event handling
+9. Conditional rendering (`v-if`, `v-show`)
+10. List rendering (`v-for`)
+11. Dynamic class and style binding
+12. Reactivity using `ref()` and `reactive()`
+13. Computed properties and watchers
+14. Props and component events
+15. Component lifecycle hooks
+16. TypeScript integration with Vue
+17. Component `v-model`
+18. Slots and reusable component design
+19. Provide and Inject fundamentals
+20. Responsive UI development
 
----
+## Practical and Real-World Exposure
 
-# `src/`
-
-The `src` folder contains the main source code of the Angular application.
-
----
-
-## `index.html`
-
-`index.html` is the main HTML page loaded by the browser.
-
-Angular renders the application inside:
-
-```html
-<app-root></app-root>
-```
-
-The root Angular component is connected to this element.
+- Understand an existing Vue project structure.
+- Analyze Single File Components.
+- Understand component communication and application data flow.
+- Create reusable components.
+- Understand shared utilities and composables.
+- Follow existing project coding standards.
+- Understand environment configuration.
 
 ---
 
-## `styles.css`
+# Phase 4: Vue.js Advanced Concepts and Production Development (Days 46–60)
 
-`styles.css` contains **global styles** for the entire application.
+## Technical Concepts
 
-Example:
+1. Vue Router and navigation
+2. Dynamic and nested routes
+3. Route parameters and query parameters
+4. Navigation guards
+5. Lazy-loaded routes
+6. REST API integration
+7. Axios and asynchronous operations
+8. API error handling
+9. Request and response interceptors
+10. Request cancellation
+11. Pinia state management
+12. Stores, state, getters and actions
+13. Form handling and validation
+14. Reusable composables
+15. TypeScript with Vue
+16. Component testing and debugging
+17. Search, filtering, sorting and pagination
+18. File upload and download
+19. Loading, empty and error states
 
-```css
-body {
-  margin: 0;
-}
-```
+## Production-Ready Concepts
 
----
+### Authentication and Authorization
 
-## `main.ts`
+- Login and logout flows
+- Authentication state management
+- Protected routes
+- Navigation guards
+- Role-based access control
+- Permission-based UI rendering
+- Session expiration handling
 
-`main.ts` is the main entry point of the Angular application.
+### Application Architecture
 
-In a modern Angular standalone application, it bootstraps the application.
+- Feature-based folder organization
+- API service layer
+- Shared components
+- Reusable composables
+- Shared TypeScript types
+- State management organization
+- Separation of UI and business logic
 
-Example:
+### Performance Optimization
 
-```ts
-import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { App } from './app/app';
+- Route lazy loading
+- Async components
+- Code splitting
+- Avoiding unnecessary reactivity
+- Component optimization
+- Bundle size awareness
 
-bootstrapApplication(App, appConfig)
-  .catch((err) => console.error(err));
-```
+### Security
 
----
+- Safe user input handling
+- XSS awareness
+- Authentication token handling
+- Environment variables
+- Secure API configuration
+- Avoiding sensitive information in client-side code
 
-## `favicon.ico`
+### Error Handling
 
-This is the icon displayed in the browser tab.
-
----
-
-# `src/app/`
-
-The `src/app/` folder contains the main Angular application code.
-
-A modern Angular project may contain files such as:
-
-```text
-src/app/
-│
-├── app.ts
-├── app.html
-├── app.css
-├── app.config.ts
-└── app.routes.ts
-```
-
-> Depending on the Angular project configuration or tutorial, you may also see names such as `app.component.ts` and `app.component.html`.
-
----
-
-## Root Component
-
-The root component is the main starting component of the Angular application.
-
-Modern Angular CLI projects use a standalone component.
-
-Example:
-
-### `app.ts`
-
-```ts
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [],
-  templateUrl: './app.html',
-  styleUrl: './app.css',
-})
-export class App {
-  title = 'my-angular-app';
-}
-```
-
-The selector:
-
-```text
-app-root
-```
-
-connects to:
-
-```html
-<app-root></app-root>
-```
-
-in `index.html`.
+- Centralized API error handling
+- Global application error handling
+- User-friendly error messages
+- Retry and fallback strategies
 
 ---
 
-## `app.html`
+# Client-Side Build and Deployment
 
-This file contains the HTML template of the root component.
+This section will be practiced for both Angular and Vue applications.
 
-Example:
+## Build Process
 
-```html
-<h1>Hello Angular</h1>
-```
+1. Development build vs production build
+2. Environment-specific configuration
+3. Production build optimization
+4. Understanding generated build output
+5. Static assets and asset handling
+6. Source maps
+7. Bundle size awareness
 
----
+## Client-Side Deployment
 
-## `app.config.ts`
+Understand how a frontend application is deployed to a hosting environment.
 
-This file contains application-level configuration and providers.
+### Deployment Concepts
 
----
+1. Static site hosting
+2. Production build generation
+3. Uploading or publishing build files
+4. Environment configuration
+5. Production API configuration
+6. Custom domains
+7. HTTPS and SSL basics
+8. Cache handling
+9. Client-side routing configuration
+10. SPA fallback configuration
+11. Deployment rollback fundamentals
 
-## `app.routes.ts`
+### Deployment Platforms – Basic Exposure
 
-This file contains application routes.
+Gain practical exposure to deploying applications using one or more platforms such as:
 
-Routes decide which component should be displayed for a particular URL.
+- [Vercel](https://vercel.com/?utm_source=chatgpt.com)
+- [Netlify](https://www.netlify.com/?utm_source=chatgpt.com)
+- Cloud hosting or the organization's deployment platform
 
----
+## CI/CD Fundamentals
 
-# Other Important Files
-
-## `angular.json`
-
-Contains Angular project configuration.
-
-It is used for configuration related to:
-
-- Build
-- Serve
-- Project settings
-
----
-
-## `package.json`
-
-Contains:
-
-- Dependencies
-- Packages
-- npm commands/scripts
-
-Example:
-
-```json
-{
-  "scripts": {
-    "start": "ng serve"
-  }
-}
-```
-
-When we run:
-
-```bash
-npm start
-```
-
-it runs the configured Angular start command.
+1. Introduction to Continuous Integration and Continuous Deployment
+2. Build validation
+3. Automated testing before deployment
+4. Environment-based deployments
+5. Development, staging and production environments
+6. Deployment pipelines
+7. Basic rollback concepts
 
 ---
 
-## `tsconfig.json`
+# Common Production Application Concepts
 
-This file contains TypeScript configuration.
+The following concepts will be understood and practiced throughout both Angular and Vue.js development.
 
----
-
-
-# Data Binding
-
-Data binding creates a connection between the:
-
-```text
-Component Class ↔ Template/View
-```
-
-The component contains the application data and logic.
-
-The template displays the data to the user.
-
-If data changes, Angular can update the view.
-
----
-
-# Types of Data Binding
-
-The main types are:
-
-1. One-way binding
-2. Two-way binding
-
-Common one-way binding techniques include:
-
-- String interpolation
-- Property binding
-- Event binding
+| Area | Concepts |
+|---|---|
+| Application Architecture | Feature-based structure, reusable components and separation of concerns |
+| API Integration | REST APIs, HTTP methods, headers and error handling |
+| Authentication | Login, logout and token handling |
+| Authorization | Roles, permissions and protected routes |
+| Forms | Validation, dynamic fields and server-side errors |
+| State Management | Shared state and application data |
+| Performance | Lazy loading, code splitting and rendering optimization |
+| Security | XSS awareness, safe input and environment configuration |
+| Accessibility | Semantic HTML and basic accessibility practices |
+| Error Handling | API errors, global errors and fallback states |
+| Testing | Unit, component and integration testing fundamentals |
+| Debugging | Browser DevTools, console and network debugging |
+| Logging | Understanding application errors and debugging production issues |
+| Git | Branching, pull requests, merging and conflict resolution |
+| Build Process | Development and production builds |
+| Deployment | Static hosting, environments and SPA configuration |
+| CI/CD | Automated build, test and deployment fundamentals |
+| Maintenance | Bug fixing, refactoring and existing codebase understanding |
 
 ---
 
-# 1. One-Way Binding
+# Daily Learning Schedule
 
-In one-way binding, data communication happens in one direction.
-
-For example:
-
-```text
-Component → View
-```
-
-If the component data changes, the view can display the updated value.
+| Activity | Time |
+|---|---:|
+| Framework concepts and documentation | 30 minutes |
+| Hands-on coding | 45 minutes |
+| Real-world project concepts, debugging or deployment | 30 minutes |
+| Revision and notes | 15 minutes |
+| **Total** | **2 Hours** |
 
 ---
 
-## Example
+# Expected Outcomes
 
-### `app.ts`
+By the end of the 60-day learning period, the following outcomes are expected:
 
-```ts
-export class App {
-  title = 'Hello';
-}
-```
-
-### `app.html`
-
-```html
-<h1>{{ title }}</h1>
-```
-
-Output:
-
-```text
-Hello
-```
-
-Here, we are displaying the value from the component in the view.
-
----
-
-# 2. Two-Way Binding
-
-In two-way binding, data can interact between both the:
-
-```text
-Component ↔ View
-```
-
-If the user changes the value in the view, the component value is updated.
-
-This can be done using:
-
-```text
-ngModel
-```
+1. Understand Angular and Vue.js application architecture.
+2. Develop reusable and maintainable frontend components.
+3. Work effectively with TypeScript.
+4. Implement routing and navigation.
+5. Integrate REST APIs.
+6. Build dynamic forms with validations.
+7. Understand Angular Signals and Vue/Pinia state management.
+8. Implement authentication and authorization fundamentals.
+9. Handle loading, empty and error states.
+10. Debug common frontend and API issues.
+11. Understand performance optimization fundamentals.
+12. Write and understand basic component and service tests.
+13. Create optimized production builds.
+14. Understand environment configuration.
+15. Deploy client-side applications to a hosting environment.
+16. Understand basic CI/CD workflows.
+17. Understand and contribute to an existing project codebase.
+18. Develop a production-oriented frontend application.
 
 ---
 
-## Example
+# Final Deliverables
 
-### `app.ts`
+## Angular Application
 
-```ts
-import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+**Employee Management Application**
 
-@Component({
-  selector: 'app-root',
-  imports: [FormsModule],
-  templateUrl: './app.html',
-})
-export class App {
-  fullName = 'Devika';
-}
-```
+Including:
 
-### `app.html`
+- Authentication and protected routes
+- CRUD functionality
+- API integration
+- Reactive forms
+- Validation
+- Search, filtering and pagination
+- Error handling
+- Role-based UI
+- Reusable components
+- Testing basics
+- Production build
+- Client-side deployment
 
-```html
-<h1>{{ fullName }}</h1>
+## Vue.js Application
 
-<input type="text" [(ngModel)]="fullName">
-```
+**Task Management Application**
 
-If the user changes the input value, `fullName` is automatically updated.
+Including:
 
-The updated value is displayed in:
-
-```html
-<h1>{{ fullName }}</h1>
-```
-
----
-
-# `FormsModule` and `ngModel`
-
-`ngModel` comes from Angular Forms.
-
-Therefore, we need to import `FormsModule`.
-
-In a modern standalone component:
-
-```ts
-import { FormsModule } from '@angular/forms';
-
-@Component({
-  imports: [FormsModule]
-})
-```
-
-Now we can use:
-
-```html
-<input [(ngModel)]="fullName">
-```
+- Authentication and protected routes
+- CRUD functionality
+- API integration
+- Pinia state management
+- Forms and validation
+- Search, filtering and pagination
+- Error handling
+- Reusable components and composables
+- Testing basics
+- Production build
+- Client-side deployment
 
 ---
 
-# String Interpolation
+# Duration Summary
 
-String interpolation allows us to display values from the component inside the HTML template.
+| Phase | Duration | Focus |
+|---|---:|---|
+| Phase 1 | Days 1–15 | Angular Fundamentals and Architecture |
+| Phase 2 | Days 16–30 | Angular Advanced and Production Development |
+| Phase 3 | Days 31–45 | Vue Fundamentals and Architecture |
+| Phase 4 | Days 46–60 | Vue Advanced and Production Development |
+| **Total** | **60 Days** | **Production-Oriented Frontend Development** |
 
-Syntax:
-
-```html
-{{ expression }}
-```
-
----
-
-## Displaying a Variable
-
-### `app.ts`
-
-```ts
-export class App {
-  title = 'Angular';
-}
-```
-
-### `app.html`
-
-```html
-<h1>{{ title }}</h1>
-```
-
----
-
-## Displaying a Function Result
-
-### `app.ts`
-
-```ts
-export class App {
-  getName() {
-    return 'Devika';
-  }
-}
-```
-
-### `app.html`
-
-```html
-<h1>{{ getName() }}</h1>
-```
-
----
-
-# String Interpolation with Attribute Binding
-
-We can use values from the component in HTML attributes.
-
-### `app.ts`
-
-```ts
-export class App {
-  imageUrl = 'assets/pic.jpg';
-  imageAlt = 'Logo';
-}
-```
-
-### `app.html`
-
-Using property binding:
-
-```html
-<img [src]="imageUrl" [alt]="imageAlt">
-```
-
-We can also use interpolation inside an attribute:
-
-```html
-<img [src]="imageUrl" alt="This is the {{ imageAlt }}">
-```
-
----
-
-# Day 1 Summary
-
-Today I learned:
-
-- What Angular is
-- Why Angular is used
-- Single Page Applications (SPA)
-- Angular history
-- Angular versions
-- Node.js
-- npm
-- Angular CLI
-- Creating an Angular application
-- Running an Angular application
-- Angular project structure
-- Standalone components
-- `app.module.ts` vs modern standalone components
-- Data binding
-- One-way binding
-- Two-way binding
-- `ngModel`
-- `FormsModule`
-- String interpolation
-- Property binding
+**Technologies and Concepts:** Angular, Vue.js, TypeScript, HTML, CSS, REST APIs, RxJS, Pinia, Authentication, Testing, Performance Optimization, Security Fundamentals, Build Processes, Client-Side Deployment, CI/CD Fundamentals and Git.
